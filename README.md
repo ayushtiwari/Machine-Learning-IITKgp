@@ -1,5 +1,5 @@
 # Machine_Learning
-Solutions to Machine Learning Assignments of Autumn 2019
+Solutions to ML Assignments of Autumn 2019
 
 ## Overview
 
