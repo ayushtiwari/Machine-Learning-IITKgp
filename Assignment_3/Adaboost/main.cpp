@@ -427,8 +427,9 @@ void print_sample(int n) {
     Gets a sample of data as per weights
  */
 void get_sample(vector<vector<string> > &rows, vector<double> &weights) {
-
-    default_random_engine generator;
+    
+    unsigned seed = (unsigned)std::chrono::system_clock::now().time_since_epoch().count();
+    default_random_engine generator(seed);
     uniform_real_distribution<double> distribution(0.0,1.0);
      
     vector<double> cum_weights(weights.size());
